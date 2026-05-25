@@ -1,0 +1,50 @@
+/* Status Bar */
+"Line %lld, Column %lld" = "%lld 行、%lld 列";
+"%lld characters" = "%lld 文字";
+"%lld words" = "%lld 語";
+"Word Wrap" = "ワードラップ";
+
+/* Menus */
+"New" = "新規";
+"Open…" = "開く…";
+"Save" = "保存";
+"Save As…" = "別名で保存…";
+"Page Setup…" = "ページ設定…";
+"Print…" = "プリント…";
+"Find…" = "検索…";
+"Find and Replace…" = "検索と置換…";
+"Go to Line…" = "行に移動…";
+"Insert Date and Time" = "日付と時刻を挿入";
+"Pick Screen Color…" = "スクリーンカラーを選択…";
+"Zoom In" = "拡大";
+"Zoom Out" = "縮小";
+"Actual Size" = "原寸大";
+"Format" = "フォーマット";
+
+/* Document */
+"Untitled" = "名称未設定";
+"Untitled.txt" = "名称未設定.txt";
+
+/* Dialogs */
+"Unsaved Changes" = "未保存の変更があります";
+"Do you want to save your changes?" = "変更内容を保存しますか？";
+"Don't Save" = "保存しない";
+"Cancel" = "キャンセル";
+"Go to Line" = "行に移動";
+"Enter a line number." = "行番号を入力してください。";
+"OK" = "OK";
+"Could not open \"%@\"." = "「%@」を開けませんでした。";
+"Could not save: %@" = "保存できませんでした：%@";
+
+/* Settings */
+"Appearance" = "外観";
+"Language" = "言語";
+"Font" = "フォント";
+"Change…" = "変更…";
+"Light" = "ライト";
+"Dark" = "ダーク";
+"System" = "システム";
+"Language Changed" = "言語を変更しました";
+"Restart the app to apply the new language." = "新しい言語を適用するにはアプリを再起動してください。";
+"Restart Now" = "今すぐ再起動";
+"Later" = "後で";

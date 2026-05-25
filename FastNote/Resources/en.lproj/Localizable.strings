@@ -1,0 +1,50 @@
+/* Status Bar */
+"Line %lld, Column %lld" = "Line %lld, Column %lld";
+"%lld characters" = "%lld characters";
+"%lld words" = "%lld words";
+"Word Wrap" = "Word Wrap";
+
+/* Menus */
+"New" = "New";
+"Open…" = "Open…";
+"Save" = "Save";
+"Save As…" = "Save As…";
+"Page Setup…" = "Page Setup…";
+"Print…" = "Print…";
+"Find…" = "Find…";
+"Find and Replace…" = "Find and Replace…";
+"Go to Line…" = "Go to Line…";
+"Insert Date and Time" = "Insert Date and Time";
+"Pick Screen Color…" = "Pick Screen Color…";
+"Zoom In" = "Zoom In";
+"Zoom Out" = "Zoom Out";
+"Actual Size" = "Actual Size";
+"Format" = "Format";
+
+/* Document */
+"Untitled" = "Untitled";
+"Untitled.txt" = "Untitled.txt";
+
+/* Dialogs */
+"Unsaved Changes" = "Unsaved Changes";
+"Do you want to save your changes?" = "Do you want to save your changes?";
+"Don't Save" = "Don't Save";
+"Cancel" = "Cancel";
+"Go to Line" = "Go to Line";
+"Enter a line number." = "Enter a line number.";
+"OK" = "OK";
+"Could not open \"%@\"." = "Could not open \"%@\".";
+"Could not save: %@" = "Could not save: %@";
+
+/* Settings */
+"Appearance" = "Appearance";
+"Language" = "Language";
+"Font" = "Font";
+"Change…" = "Change…";
+"Light" = "Light";
+"Dark" = "Dark";
+"System" = "System";
+"Language Changed" = "Language Changed";
+"Restart the app to apply the new language." = "Restart the app to apply the new language.";
+"Restart Now" = "Restart Now";
+"Later" = "Later";

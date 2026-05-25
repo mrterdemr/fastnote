@@ -1,0 +1,50 @@
+/* Status Bar */
+"Line %lld, Column %lld" = "Satır %lld, Sütun %lld";
+"%lld characters" = "%lld karakter";
+"%lld words" = "%lld kelime";
+"Word Wrap" = "Kelime Kaydırma";
+
+/* Menus */
+"New" = "Yeni";
+"Open…" = "Aç…";
+"Save" = "Kaydet";
+"Save As…" = "Farklı Kaydet…";
+"Page Setup…" = "Sayfa Yapısı…";
+"Print…" = "Yazdır…";
+"Find…" = "Bul…";
+"Find and Replace…" = "Bul ve Değiştir…";
+"Go to Line…" = "Satıra Git…";
+"Insert Date and Time" = "Tarih ve Saat Ekle";
+"Pick Screen Color…" = "Ekran Rengi Seç…";
+"Zoom In" = "Yakınlaştır";
+"Zoom Out" = "Uzaklaştır";
+"Actual Size" = "Asıl Boyut";
+"Format" = "Biçim";
+
+/* Document */
+"Untitled" = "Adsız";
+"Untitled.txt" = "Adsız.txt";
+
+/* Dialogs */
+"Unsaved Changes" = "Kaydedilmemiş değişiklikler var.";
+"Do you want to save your changes?" = "Kaydetmek ister misiniz?";
+"Don't Save" = "Kaydetme";
+"Cancel" = "İptal";
+"Go to Line" = "Satıra Git";
+"Enter a line number." = "Gidilecek satır numarasını girin.";
+"OK" = "Tamam";
+"Could not open \"%@\"." = "\"%@\" dosyası açılamadı.";
+"Could not save: %@" = "Dosya kaydedilemedi: %@";
+
+/* Settings */
+"Appearance" = "Görünüm";
+"Language" = "Dil";
+"Font" = "Yazı Tipi";
+"Change…" = "Değiştir…";
+"Light" = "Açık";
+"Dark" = "Koyu";
+"System" = "Sistem";
+"Language Changed" = "Dil Değiştirildi";
+"Restart the app to apply the new language." = "Yeni dili uygulamak için uygulamayı yeniden başlatın.";
+"Restart Now" = "Şimdi Yeniden Başlat";
+"Later" = "Daha Sonra";

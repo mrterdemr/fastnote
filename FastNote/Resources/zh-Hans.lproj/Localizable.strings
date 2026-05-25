@@ -1,0 +1,50 @@
+/* Status Bar */
+"Line %lld, Column %lld" = "行 %lld，列 %lld";
+"%lld characters" = "%lld 个字符";
+"%lld words" = "%lld 个词";
+"Word Wrap" = "自动换行";
+
+/* Menus */
+"New" = "新建";
+"Open…" = "打开…";
+"Save" = "存储";
+"Save As…" = "存储为…";
+"Page Setup…" = "页面设置…";
+"Print…" = "打印…";
+"Find…" = "查找…";
+"Find and Replace…" = "查找和替换…";
+"Go to Line…" = "跳转到行…";
+"Insert Date and Time" = "插入日期和时间";
+"Pick Screen Color…" = "选取屏幕颜色…";
+"Zoom In" = "放大";
+"Zoom Out" = "缩小";
+"Actual Size" = "实际大小";
+"Format" = "格式";
+
+/* Document */
+"Untitled" = "无标题";
+"Untitled.txt" = "无标题.txt";
+
+/* Dialogs */
+"Unsaved Changes" = "有未存储的更改";
+"Do you want to save your changes?" = "是否要存储更改？";
+"Don't Save" = "不存储";
+"Cancel" = "取消";
+"Go to Line" = "跳转到行";
+"Enter a line number." = "输入行号。";
+"OK" = "好";
+"Could not open \"%@\"." = "无法打开"%@"。";
+"Could not save: %@" = "无法存储：%@";
+
+/* Settings */
+"Appearance" = "外观";
+"Language" = "语言";
+"Font" = "字体";
+"Change…" = "更改…";
+"Light" = "浅色";
+"Dark" = "深色";
+"System" = "系统";
+"Language Changed" = "语言已更改";
+"Restart the app to apply the new language." = "请重新启动应用以应用新语言。";
+"Restart Now" = "立即重启";
+"Later" = "稍后";

@@ -1,0 +1,50 @@
+/* Status Bar */
+"Line %lld, Column %lld" = "Строка %lld, Столбец %lld";
+"%lld characters" = "%lld символов";
+"%lld words" = "%lld слов";
+"Word Wrap" = "Перенос слов";
+
+/* Menus */
+"New" = "Новый";
+"Open…" = "Открыть…";
+"Save" = "Сохранить";
+"Save As…" = "Сохранить как…";
+"Page Setup…" = "Параметры страницы…";
+"Print…" = "Печать…";
+"Find…" = "Найти…";
+"Find and Replace…" = "Найти и заменить…";
+"Go to Line…" = "Перейти к строке…";
+"Insert Date and Time" = "Вставить дату и время";
+"Pick Screen Color…" = "Выбрать цвет экрана…";
+"Zoom In" = "Увеличить";
+"Zoom Out" = "Уменьшить";
+"Actual Size" = "Реальный размер";
+"Format" = "Формат";
+
+/* Document */
+"Untitled" = "Без имени";
+"Untitled.txt" = "Без имени.txt";
+
+/* Dialogs */
+"Unsaved Changes" = "Несохранённые изменения";
+"Do you want to save your changes?" = "Сохранить изменения?";
+"Don't Save" = "Не сохранять";
+"Cancel" = "Отменить";
+"Go to Line" = "Перейти к строке";
+"Enter a line number." = "Введите номер строки.";
+"OK" = "OK";
+"Could not open \"%@\"." = "Не удалось открыть «%@».";
+"Could not save: %@" = "Не удалось сохранить: %@";
+
+/* Settings */
+"Appearance" = "Вид";
+"Language" = "Язык";
+"Font" = "Шрифт";
+"Change…" = "Изменить…";
+"Light" = "Светлый";
+"Dark" = "Тёмный";
+"System" = "Системный";
+"Language Changed" = "Язык изменён";
+"Restart the app to apply the new language." = "Перезапустите приложение, чтобы применить новый язык.";
+"Restart Now" = "Перезапустить";
+"Later" = "Позже";

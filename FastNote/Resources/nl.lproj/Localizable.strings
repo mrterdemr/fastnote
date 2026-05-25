@@ -1,0 +1,50 @@
+/* Status Bar */
+"Line %lld, Column %lld" = "Regel %lld, Kolom %lld";
+"%lld characters" = "%lld tekens";
+"%lld words" = "%lld woorden";
+"Word Wrap" = "Terugloop";
+
+/* Menus */
+"New" = "Nieuw";
+"Open…" = "Open…";
+"Save" = "Bewaar";
+"Save As…" = "Bewaar als…";
+"Page Setup…" = "Pagina-instelling…";
+"Print…" = "Druk af…";
+"Find…" = "Zoek…";
+"Find and Replace…" = "Zoek en vervang…";
+"Go to Line…" = "Ga naar regel…";
+"Insert Date and Time" = "Datum en tijd invoegen";
+"Pick Screen Color…" = "Schermkleur kiezen…";
+"Zoom In" = "Zoom in";
+"Zoom Out" = "Zoom uit";
+"Actual Size" = "Werkelijke grootte";
+"Format" = "Opmaak";
+
+/* Document */
+"Untitled" = "Naamloos";
+"Untitled.txt" = "Naamloos.txt";
+
+/* Dialogs */
+"Unsaved Changes" = "Niet-bewaarde wijzigingen";
+"Do you want to save your changes?" = "Wilt u de wijzigingen bewaren?";
+"Don't Save" = "Niet bewaren";
+"Cancel" = "Annuleer";
+"Go to Line" = "Ga naar regel";
+"Enter a line number." = "Voer een regelnummer in.";
+"OK" = "OK";
+"Could not open \"%@\"." = "Kan \"%@\" niet openen.";
+"Could not save: %@" = "Kan niet bewaren: %@";
+
+/* Settings */
+"Appearance" = "Weergave";
+"Language" = "Taal";
+"Font" = "Lettertype";
+"Change…" = "Wijzig…";
+"Light" = "Licht";
+"Dark" = "Donker";
+"System" = "Systeem";
+"Language Changed" = "Taal gewijzigd";
+"Restart the app to apply the new language." = "Start de app opnieuw op om de nieuwe taal toe te passen.";
+"Restart Now" = "Nu opnieuw starten";
+"Later" = "Later";

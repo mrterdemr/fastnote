@@ -1,0 +1,50 @@
+/* Status Bar */
+"Line %lld, Column %lld" = "Riga %lld, Colonna %lld";
+"%lld characters" = "%lld caratteri";
+"%lld words" = "%lld parole";
+"Word Wrap" = "A capo automatico";
+
+/* Menus */
+"New" = "Nuovo";
+"Open…" = "Apri…";
+"Save" = "Salva";
+"Save As…" = "Salva con nome…";
+"Page Setup…" = "Impostazioni di stampa…";
+"Print…" = "Stampa…";
+"Find…" = "Cerca…";
+"Find and Replace…" = "Cerca e sostituisci…";
+"Go to Line…" = "Vai alla riga…";
+"Insert Date and Time" = "Inserisci data e ora";
+"Pick Screen Color…" = "Seleziona colore schermo…";
+"Zoom In" = "Ingrandisci";
+"Zoom Out" = "Riduci";
+"Actual Size" = "Dimensione reale";
+"Format" = "Formato";
+
+/* Document */
+"Untitled" = "Senza titolo";
+"Untitled.txt" = "Senza titolo.txt";
+
+/* Dialogs */
+"Unsaved Changes" = "Modifiche non salvate";
+"Do you want to save your changes?" = "Vuoi salvare le modifiche?";
+"Don't Save" = "Non salvare";
+"Cancel" = "Annulla";
+"Go to Line" = "Vai alla riga";
+"Enter a line number." = "Inserisci un numero di riga.";
+"OK" = "OK";
+"Could not open \"%@\"." = "Impossibile aprire \"%@\".";
+"Could not save: %@" = "Impossibile salvare: %@";
+
+/* Settings */
+"Appearance" = "Aspetto";
+"Language" = "Lingua";
+"Font" = "Font";
+"Change…" = "Cambia…";
+"Light" = "Chiaro";
+"Dark" = "Scuro";
+"System" = "Sistema";
+"Language Changed" = "Lingua modificata";
+"Restart the app to apply the new language." = "Riavvia l'app per applicare la nuova lingua.";
+"Restart Now" = "Riavvia ora";
+"Later" = "Più tardi";

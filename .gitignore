@@ -1,0 +1,9 @@
+.build/
+*.app/
+*.dmg
+.DS_Store
+*.o
+*.d
+*.pxd
+rw.*.dmg
+notepad_icon.jpg

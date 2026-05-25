@@ -1,0 +1,50 @@
+/* Status Bar */
+"Line %lld, Column %lld" = "%lld행, %lld열";
+"%lld characters" = "%lld자";
+"%lld words" = "%lld단어";
+"Word Wrap" = "자동 줄바꿈";
+
+/* Menus */
+"New" = "새로 만들기";
+"Open…" = "열기…";
+"Save" = "저장";
+"Save As…" = "다른 이름으로 저장…";
+"Page Setup…" = "페이지 설정…";
+"Print…" = "프린트…";
+"Find…" = "찾기…";
+"Find and Replace…" = "찾기 및 바꾸기…";
+"Go to Line…" = "줄 이동…";
+"Insert Date and Time" = "날짜 및 시간 삽입";
+"Pick Screen Color…" = "화면 색상 선택…";
+"Zoom In" = "확대";
+"Zoom Out" = "축소";
+"Actual Size" = "실제 크기";
+"Format" = "포맷";
+
+/* Document */
+"Untitled" = "제목 없음";
+"Untitled.txt" = "제목 없음.txt";
+
+/* Dialogs */
+"Unsaved Changes" = "저장하지 않은 변경 사항";
+"Do you want to save your changes?" = "변경 사항을 저장하시겠습니까?";
+"Don't Save" = "저장 안 함";
+"Cancel" = "취소";
+"Go to Line" = "줄 이동";
+"Enter a line number." = "줄 번호를 입력하세요.";
+"OK" = "확인";
+"Could not open \"%@\"." = "\"%@\"을(를) 열 수 없습니다.";
+"Could not save: %@" = "저장할 수 없습니다: %@";
+
+/* Settings */
+"Appearance" = "화면 모드";
+"Language" = "언어";
+"Font" = "서체";
+"Change…" = "변경…";
+"Light" = "라이트";
+"Dark" = "다크";
+"System" = "시스템";
+"Language Changed" = "언어가 변경되었습니다";
+"Restart the app to apply the new language." = "새 언어를 적용하려면 앱을 재시작하세요.";
+"Restart Now" = "지금 재시작";
+"Later" = "나중에";
