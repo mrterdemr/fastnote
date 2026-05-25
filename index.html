@@ -345,12 +345,51 @@
     footer .brand { display: flex; align-items: center; gap: 8px; color: rgba(255,255,255,0.8); font-weight: 500; }
     footer .brand img { width: 22px; height: 22px; border-radius: 5px; }
 
-    @media (max-width: 640px) {
+    @media (max-width: 768px) {
+      /* Nav */
       nav { padding: 0 20px; }
       nav ul { display: none; }
+
+      /* Hero */
+      .hero { padding: 64px 20px 56px; }
+      .hero-icon { width: 100px; height: 100px; border-radius: 24px; margin-bottom: 24px; }
+      .hero-actions { flex-direction: column; align-items: center; }
+      .btn-primary, .btn-secondary { width: 100%; max-width: 320px; justify-content: center; }
+
+      /* Mock window */
+      .window-wrap { padding: 0 16px 56px; }
+      .window-scene { padding: 20px; border-radius: 16px; }
+      .blob { filter: blur(48px); }
+      .blob-1 { width: 200px; height: 200px; }
+      .blob-2 { width: 160px; height: 160px; }
+      .blob-3 { width: 140px; height: 140px; }
+      .blob-4 { width: 120px; height: 120px; }
+      .mac-editor { min-height: 220px; padding: 8px 10px; }
+      .mac-editor-text { font-size: 11px; white-space: pre-wrap; word-break: break-word; }
+      .mac-statusbar { gap: 6px; font-size: 10px; padding: 0 10px; overflow: hidden; }
+      .mac-statusbar .sb-right { gap: 6px; }
+      .mac-statusbar #sbWords { display: none; }
+
+      /* Features */
+      .section { padding: 56px 16px; }
+      .section-sub { font-size: 16px; }
+      .features-grid { grid-template-columns: 1fr; gap: 14px; }
+      .feat { padding: 24px 20px; }
+
+      /* Highlight */
+      .highlight { padding: 56px 20px; }
+      .highlight p { font-size: 16px; }
+
+      /* Specs */
       .specs-inner { grid-template-columns: 1fr; }
       .spec-row:nth-child(odd) { border-right: none; }
-      footer { flex-direction: column; text-align: center; }
+
+      /* CTA */
+      .cta { padding: 64px 20px; }
+      .cta a.btn-primary { width: 100%; max-width: 320px; justify-content: center; font-size: 16px !important; padding: 14px 24px !important; }
+
+      /* Footer */
+      footer { flex-direction: column; text-align: center; padding: 24px 20px; }
     }
   </style>
 </head>
@@ -367,7 +406,7 @@
     <li><a href="#languages">Languages</a></li>
     <li><a href="#specs">Requirements</a></li>
   </ul>
-  <a href="#download" class="dl-btn">Download</a>
+  <a href="https://github.com/mrterdemr/fastnote/releases/download/v1.0/FastNote.dmg" class="dl-btn">Download</a>
 </nav>
 
 <!-- HERO -->
