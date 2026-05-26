@@ -1,6 +1,19 @@
 import SwiftUI
 import AppKit
 
+private final class TracklessScroller: NSScroller {
+    override func drawKnobSlot(in slotRect: NSRect, highlight flag: Bool) {}
+}
+
+private final class CornerlessScrollView: NSScrollView {
+    override func tile() {
+        super.tile()
+        subviews
+            .filter { !($0 is NSScroller) && $0 !== contentView }
+            .forEach { $0.removeFromSuperview() }
+    }
+}
+
 struct TextEditorView: NSViewRepresentable {
     @ObservedObject var document: NoteDocument
     @ObservedObject var settings: EditorSettings
@@ -11,14 +24,24 @@ struct TextEditorView: NSViewRepresentable {
     }
 
     func makeNSView(context: Context) -> NSScrollView {
-        let scrollView = NSTextView.scrollableTextView()
+        let scrollView = CornerlessScrollView(frame: .zero)
         scrollView.borderType = .noBorder
         scrollView.hasVerticalScroller = true
+        scrollView.verticalScroller = TracklessScroller()
+        scrollView.horizontalScroller = TracklessScroller()
         scrollView.autohidesScrollers = false
 
-        guard let textView = scrollView.documentView as? NSTextView else {
-            return scrollView
-        }
+        let textView = NSTextView(frame: .zero)
+        textView.isVerticallyResizable = true
+        textView.isHorizontallyResizable = false
+        textView.autoresizingMask = [.width]
+        textView.maxSize = NSSize(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude)
+        textView.textContainer?.widthTracksTextView = true
+        textView.textContainer?.containerSize = NSSize(
+            width: CGFloat.greatestFiniteMagnitude,
+            height: CGFloat.greatestFiniteMagnitude
+        )
+        scrollView.documentView = textView
 
         textView.delegate = context.coordinator
         textView.isRichText = false
