@@ -9,6 +9,7 @@ struct FastNoteApp: App {
     @StateObject private var settings = EditorSettings.shared
 
     init() {
+        NSWindow.allowsAutomaticWindowTabbing = false
         LanguageMode.current.apply()
     }
 

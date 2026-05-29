@@ -9,7 +9,7 @@ private final class CornerlessScrollView: NSScrollView {
     override func tile() {
         super.tile()
         subviews
-            .filter { !($0 is NSScroller) && $0 !== contentView }
+            .filter { !($0 is NSScroller) && $0 !== contentView && $0.frame.width < 30 && $0.frame.height < 30 }
             .forEach { $0.removeFromSuperview() }
     }
 }
