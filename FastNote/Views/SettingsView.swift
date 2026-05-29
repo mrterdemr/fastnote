@@ -10,6 +10,13 @@ struct SettingsView: View {
     @ObservedObject private var settings = EditorSettings.shared
 
     @State private var showRestartAlert = false
+    @State private var originalFontName: String? = nil
+    @State private var originalFontSize: Double? = nil
+
+    private var fontChanged: Bool {
+        guard let name = originalFontName, let size = originalFontSize else { return false }
+        return settings.fontName != name || settings.fontSize != size
+    }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
@@ -47,12 +54,23 @@ struct SettingsView: View {
                             .foregroundStyle(.secondary)
                     }
                     Spacer()
+                    if fontChanged {
+                        Button("Revert") {
+                            settings.fontName = originalFontName!
+                            settings.fontSize = originalFontSize!
+                        }
+                        .foregroundStyle(.red)
+                    }
                     Button("Change…") { settings.openFontPanel() }
                 }
             }
         }
         .padding(24)
         .frame(width: 340)
+        .onAppear {
+            originalFontName = settings.fontName
+            originalFontSize = settings.fontSize
+        }
         .onChange(of: appearanceRaw) { newValue in
             (AppearanceMode(rawValue: newValue) ?? .system).apply()
         }

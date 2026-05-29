@@ -9,10 +9,7 @@ final class EditorSettings: NSObject, ObservableObject {
     private static let fontSizeKey = "editor.fontSize"
 
     @Published var zoom: Double {
-        didSet {
-            zoom = max(0.5, min(3.0, zoom))
-            UserDefaults.standard.set(zoom, forKey: Self.zoomKey)
-        }
+        didSet { UserDefaults.standard.set(zoom, forKey: Self.zoomKey) }
     }
 
     @Published var fontName: String {
@@ -44,8 +41,8 @@ final class EditorSettings: NSObject, ObservableObject {
             ?? NSFont.monospacedSystemFont(ofSize: fontSize, weight: .regular)
     }
 
-    func zoomIn()    { zoom += 0.1 }
-    func zoomOut()   { zoom -= 0.1 }
+    func zoomIn()    { zoom = min(3.0, zoom + 0.1) }
+    func zoomOut()   { zoom = max(0.5, zoom - 0.1) }
     func resetZoom() { zoom = 1.0 }
 
     func openFontPanel() {
