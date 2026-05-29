@@ -3,7 +3,14 @@ set -e
 
 APP_NAME="FastNote"
 BUILD_DIR=".build/release"
-APP_BUNDLE="$APP_NAME.app"
+
+if [ "$1" = "dev" ]; then
+    BUNDLE_NAME="FastNote Dev"
+else
+    BUNDLE_NAME="FastNote"
+fi
+
+APP_BUNDLE="$BUNDLE_NAME.app"
 CONTENTS="$APP_BUNDLE/Contents"
 MACOS="$CONTENTS/MacOS"
 RESOURCES="$CONTENTS/Resources"
@@ -17,10 +24,15 @@ mkdir -p "$MACOS"
 mkdir -p "$RESOURCES"
 
 # Copy binary
-cp "$BUILD_DIR/$APP_NAME" "$MACOS/"
+cp "$BUILD_DIR/$APP_NAME" "$MACOS/$APP_NAME"
 
-# Copy Info.plist
-cp "FastNote/Info.plist" "$CONTENTS/"
+# Copy and patch Info.plist for dev builds
+cp "FastNote/Info.plist" "$CONTENTS/Info.plist"
+if [ "$1" = "dev" ]; then
+    /usr/libexec/PlistBuddy -c "Set :CFBundleName 'FastNote Dev'" "$CONTENTS/Info.plist"
+    /usr/libexec/PlistBuddy -c "Set :CFBundleDisplayName 'FastNote Dev'" "$CONTENTS/Info.plist"
+    /usr/libexec/PlistBuddy -c "Set :CFBundleIdentifier 'com.murat.FastNote.dev'" "$CONTENTS/Info.plist"
+fi
 
 # Copy app icon
 cp "fastnote.icns" "$RESOURCES/fastnote.icns"
@@ -31,4 +43,4 @@ for lproj in FastNote/Resources/*.lproj; do
 done
 
 echo "✅ Built $APP_BUNDLE"
-echo "Run with: open $APP_BUNDLE"
+echo "Run with: open \"$APP_BUNDLE\""
