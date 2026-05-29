@@ -100,6 +100,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
     func application(_ application: NSApplication, open urls: [URL]) {
         guard let url = urls.first else { return }
         DocumentStore.shared.open(url: url)
+        DispatchQueue.main.async {
+            NSApp.activate(ignoringOtherApps: true)
+            (self.mainWindow ?? NSApp.windows.first(where: { !($0 is NSPanel) }))?.makeKeyAndOrderFront(nil)
+        }
     }
 
     func attach(window: NSWindow) {
