@@ -116,6 +116,9 @@
     }
     .btn-secondary:hover { background: var(--rule); transform: translateY(-2px); }
     .hero-meta { margin-top: 24px; font-size: 13px; color: #AAA; }
+    .hero-sha { display: inline-flex; align-items: center; gap: 8px; margin-top: 12px; padding: 6px 14px; background: var(--bg2); border-radius: 20px; font-size: 12px; color: #888; font-family: monospace; letter-spacing: 0.04em; }
+    .hero-sha strong { font-family: inherit; font-weight: 600; color: #555; letter-spacing: 0.06em; }
+    .hero-sha-ver { padding: 1px 7px; background: var(--bg3); border-radius: 10px; font-size: 10px; color: #666; }
 
     /* ── MOCK WINDOW ── */
     .window-wrap {
@@ -393,6 +396,9 @@
 
       /* Footer */
       footer { flex-direction: column; text-align: center; padding: 24px 20px; }
+
+      /* SHA-256 */
+      .hero-sha { display: none; }
     }
   </style>
 </head>
@@ -421,12 +427,13 @@
   <h1>Write first.<br /><span>Decide later.</span></h1>
   <p>No pressure to save. Just open and write — keep it if it's worth it.</p>
   <div class="hero-actions">
-    <a href="https://github.com/mrterdemr/fastnote/releases/download/v1.0.3/FastNote-1.0.3-arm64.dmg" class="btn-primary" id="download">
+    <a href="https://github.com/mrterdemr/fastnote/releases/download/v1.0.4/FastNote-1.0.4-arm64.dmg" class="btn-primary" id="download">
       ⬇ Download Free
     </a>
     <a href="#features" class="btn-secondary">See Features</a>
   </div>
   <p class="hero-meta">macOS 13 Ventura or later &nbsp;·&nbsp; Apple Silicon &amp; Intel</p>
+  <span class="hero-sha"><strong>SHA-256</strong><span id="sha256">27de6312aab9ebc80ccb9f512eaff6836fb032e6a2a0f673b7ca3f8ae5dcfdc2</span><span class="hero-sha-ver">v1.0.4</span></span>
 </section>
 
 <!-- MAC WINDOW MOCK -->
@@ -622,7 +629,7 @@
 <section class="cta">
   <h2>Start writing today.</h2>
   <p>No account. No subscription. No tracking. Just a great text editor.</p>
-  <a href="https://github.com/mrterdemr/fastnote/releases/download/v1.0.3/FastNote-1.0.3-arm64.dmg" class="btn-primary" style="font-size:18px; padding:16px 36px;">
+  <a href="https://github.com/mrterdemr/fastnote/releases/download/v1.0.4/FastNote-1.0.4-arm64.dmg" class="btn-primary" style="font-size:18px; padding:16px 36px;">
     ⬇ Download FastNote — Free
   </a>
   <div class="macos-badge">

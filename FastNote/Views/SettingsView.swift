@@ -96,6 +96,7 @@ struct SettingsView: View {
     }
 
     private func restartApp() {
+        guard DocumentStore.shared.confirmDiscardIfNeeded() else { return }
         let task = Process()
         task.launchPath = "/usr/bin/open"
         task.arguments = [Bundle.main.bundleURL.path]
